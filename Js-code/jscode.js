@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    MenuSlider();
     AnimationSmthSoon();
+    MenuSlider();
 
     $('[data-toggle="offcanvas"]').click(function () {
         $('#wrapper').toggleClass('toggled');
