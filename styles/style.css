@@ -263,3 +263,32 @@ div.col-lg-8 h1, div.col-lg-8 h2 {
     font-size: 29px;
     color: #222222;
 }
+.smth-soon, .text-center, .me-info{
+    --border: dotted;
+}
+.img-circle{
+    width: 125px;
+    cursor: pointer;
+}
+.me-info{
+    position: relative;
+}
+.social-net{
+    position: absolute;
+    left: 35%;
+}
+.social-net li{
+    float: left;
+    margin-left: 10px;
+    list-style-type: none;
+    --border: #1a1a1a dotted;
+
+}
+ div.social-net ul li img.img-circle, div.social-net ul li img.img-rounded {
+     width: 70px;
+     cursor: pointer;
+ }
+
+--что костыли для фоток
+
+
