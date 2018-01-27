@@ -55,6 +55,7 @@ $(document).ready(function () {
 
 
 //~main
+
     function MenuSlider() {
         var trigger = $('.hamburger'),
             overlay = $('.overlay'),
