@@ -275,11 +275,12 @@ div.col-lg-8 h1, div.col-lg-8 h2 {
 }
 .social-net{
     position: absolute;
-    left: 35%;
+    left: 30%;
+    --border: dotted;
 }
 .social-net li{
     float: left;
-    margin-left: 10px;
+    margin-left: 40px;
     list-style-type: none;
     --border: #1a1a1a dotted;
 
