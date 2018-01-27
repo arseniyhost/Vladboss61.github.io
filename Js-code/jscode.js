@@ -1,6 +1,6 @@
 $(document).ready(function () {
 //main
-    //AnimationSmthSoon();
+    //AnimationSmthSoon();-- надо что то решать ???
     clickedOnMainPhoto();
     MenuSlider();
 
@@ -20,6 +20,7 @@ $(document).ready(function () {
     $('#about-me').click( function () {
         $('.me-info').html(' ');// сгенерить разметку при выборе инфы о мне
     });
+
     $('#social-network').click( function () {
         var html = `<div class="social-net">                   
                     <ul>
@@ -45,7 +46,11 @@ $(document).ready(function () {
                         </li>
                     </ul>
                 </div>`;
+
         $('.me-info').html(html);// сгенерить разметку при  социальных ссылок
+        $('.social-net li').animate({
+            opacity: 1
+        },1200);
     });
 
 
@@ -71,6 +76,7 @@ $(document).ready(function () {
             }
         }
     }
+
     function clickedOnMainPhoto() {
         var flag = true;
         $(document).on('click','.col-lg-8 img.img-circle', function () {
@@ -85,7 +91,6 @@ $(document).ready(function () {
             }
         });
     }
-
 
     // делаем типа анимацию smth Soon. .. ...
     function AnimationSmthSoon() {
