@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    Jump(true, $('span.v-jump'));
+    //Jump(true, $('span.v-jump'));
 });
 function Jump(flag, obj) {
     var jump = obj;

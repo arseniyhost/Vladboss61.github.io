@@ -117,6 +117,6 @@ $(document).ready(function () {
                     tick = 0;
             }
         },800);
-     return out;
+        return out;
     }
 });
