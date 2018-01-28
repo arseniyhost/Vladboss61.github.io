@@ -256,6 +256,8 @@ body, html { height: 100%;}
     -webkit-transform: translate3d(-100px,0,0);
     -webkit-transition: all .35s ease-in-out;
 }
+
+
 div.col-lg-8 h1, div.col-lg-8 h2 {
     font-family: 'Playfair Display SC', serif;
     font-weight: 500;
@@ -267,7 +269,7 @@ div.col-lg-8 h1{
     text-shadow: 0px 4px 3px rgba(0,0,0,0.5),20px 8px 13px rgba(0,0,0,0.1), 30px 18px 23px rgba(0,0,0,0.1);
     font-size: 35px;
 }
-.smth-soon, .text-center, .me-info{
+ .smth-soon, .text-center, .me-info{
     --border: dotted;
 }
 .img-circle{
@@ -294,6 +296,7 @@ div.col-lg-8 .img-circle{
     box-shadow: 0px 4px 10px rgba(0,0,0,0.4), 5px 8px 20px rgba(0,0,0,0.5), 3px 12px 22px rgba(0,0,0,0.1);
 }
 div.social-net ul li img.img-circle, div.social-net ul li img.img-rounded {
+
      width: 65px;
      cursor: pointer;
 }

@@ -5,7 +5,6 @@ $(document).ready(function () {
     MenuSlider();
 
 
-
     $('[data-toggle="offcanvas"]').click(function () {
         $('#wrapper').toggleClass('toggled');
     });
