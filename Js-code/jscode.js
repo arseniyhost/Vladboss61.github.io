@@ -1,6 +1,6 @@
 $(document).ready(function () {
 //main
-    //AnimationSmthSoon();-- надо что то решать ???
+    //AnimationSmthSoon();-- надо что то решать ??? все норм clearInterval юзад
     clickedOnMainPhoto();
     MenuSlider();
 
@@ -80,23 +80,26 @@ $(document).ready(function () {
 
     function clickedOnMainPhoto() {
         var flag = true;
+        var out = null;
         $(document).on('click','.col-lg-8 img.img-circle', function () {
             if(flag){
-                $('.col-lg-8 img.img-circle + div').addClass('smth-soon');
-                AnimationSmthSoon();
+                out = AnimationSmthSoon();
                 flag = false;
             }else {
+                StopAnimationSmthSoon(out);
                 $('div.col-lg-8 .smth-soon').html(' ');
-                $('.col-lg-8 img.img-circle + div').removeClass()('smth-soon');
                 flag = true;
             }
         });
     }
-
+    //просто обертка с другим именем
+    function StopAnimationSmthSoon(out) {
+        clearInterval(out);
+    }
     // делаем типа анимацию smth Soon. .. ...
     function AnimationSmthSoon() {
         var tick = 0;
-        setInterval(function () {
+        var out = setInterval(function () {
             var soon = $('div.col-lg-8 div.smth-soon');
             switch (tick){
                 case 0:
@@ -115,5 +118,6 @@ $(document).ready(function () {
                     tick = 0;
             }
         },800);
+     return out;
     }
 });
