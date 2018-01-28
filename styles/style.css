@@ -265,12 +265,13 @@ div.col-lg-8 h1, div.col-lg-8 h2 {
 }
 div.col-lg-8 h1{
     text-shadow: 0px 4px 3px rgba(0,0,0,0.5),20px 8px 13px rgba(0,0,0,0.1), 30px 18px 23px rgba(0,0,0,0.1);
+    font-size: 35px;
 }
 .smth-soon, .text-center, .me-info{
     --border: dotted;
 }
 .img-circle{
-    width: 125px;
+    width: 130px;
     cursor: pointer;
 }
 .me-info{
@@ -289,15 +290,23 @@ div.col-lg-8 h1{
     --border: #1a1a1a dotted;
 
 }
-
 div.col-lg-8 .img-circle{
     box-shadow: 0px 4px 10px rgba(0,0,0,0.4), 5px 8px 20px rgba(0,0,0,0.5), 3px 12px 22px rgba(0,0,0,0.1);
 }
- div.social-net ul li img.img-circle, div.social-net ul li img.img-rounded {
+div.social-net ul li img.img-circle, div.social-net ul li img.img-rounded {
      width: 65px;
      cursor: pointer;
- }
+}
 
---что костыли для фоток
+div.col-lg-8 .img-circle:hover, div.social-net li img:hover{
+    -webkit-transition: all 0.3s ease;;
+    -moz-transition: all 0.3s ease;;
+    -o-transition: all 0.3s ease;;
+    transition: all 0.3s ease;
 
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
 
+--костыли для фоток
