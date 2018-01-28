@@ -311,5 +311,25 @@ div.col-lg-8 .img-circle:hover, div.social-net li img:hover{
     -ms-transform: scale(1.05);
     transform: scale(1.05);
 }
+body{
+
+    background-color: rgba(161, 164, 175, 0.85);
+    /* IE9, iOS 3.2+ */
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIxMDAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjAlIj48c3RvcCBzdG9wLWNvbG9yPSIjNTM1NDVlIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiM1MzU0NWUiIHN0b3Atb3BhY2l0eT0iMC43IiBvZmZzZXQ9IjAiLz48c3RvcCBzdG9wLWNvbG9yPSIjZWVmMmZjIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMC45OCIvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN2c2dnKSIgLz48L3N2Zz4=);
+    background-image: -webkit-gradient(linear, 100% 0%, 0% 0%,color-stop(0, rgb(83, 84, 94)),color-stop(0, rgba(83, 84, 94, 0.7)),color-stop(0.98, rgb(238, 242, 252)));
+    /* Android 2.3 */
+    background-image: -webkit-linear-gradient(right,rgba(206, 108, 89, 0.86) -1.6%,rgba(83, 84, 94, 0.7) 0%,rgb(238, 242, 252) 98%);
+    /* IE10+ */
+    background-image: linear-gradient(to left,rgba(206, 108, 89, 0.86) -1.6%,rgba(83, 84, 94, 0.7) 0%,rgb(238, 242, 252) 98%);
+    background-image: -ms-linear-gradient(right,rgba(206, 108, 89, 0.86) -1.6%,rgba(83, 84, 94, 0.7) 0%,rgb(238, 242, 252) 98%);
+
+
+
+}
+@media \0screen\,screen\9 {
+    body {
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffeef2fc", endColorstr="#dbce6c59", GradientType=1);
+    }
+}
 
 --костыли для фоток
