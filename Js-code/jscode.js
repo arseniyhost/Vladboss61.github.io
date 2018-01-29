@@ -43,6 +43,11 @@ $(document).ready(function () {
                             <img class="img-circle" src="images\\icons-social-networks\\twitter_socialnetwork_20007.png" alt="">
                             </a>
                         </li>
+                         <li>
+                            <a href="https://plus.google.com/u/0/100026292549071673782" target="_blank">
+                            <img class="img-circle" src="images\\icons-social-networks\\Google-Plus-Icon_22090.png" alt="">
+                            </a>
+                        </li>
                     </ul>
                 </div>`;
 

@@ -269,9 +269,12 @@ div.col-lg-8 h1{
     text-shadow: 0px 4px 3px rgba(0,0,0,0.5),20px 8px 13px rgba(0,0,0,0.1), 30px 18px 23px rgba(0,0,0,0.1);
     font-size: 35px;
 }
-.smth-soon, .text-center, .me-info{
-    --border: dotted;
+.container{
+    position: relative;
+    top: 0%;
+    left: 0%;
 }
+
 .img-circle{
     width: 130px;
     cursor: pointer;
@@ -281,7 +284,7 @@ div.col-lg-8 h1{
 }
 .social-net{
     position: absolute;
-    left: 30%;
+    left: 29%;
     --border: dotted;
 }
 .social-net li{
@@ -296,8 +299,7 @@ div.col-lg-8 .img-circle{
     box-shadow: 0px 4px 10px rgba(0,0,0,0.4), 5px 8px 20px rgba(0,0,0,0.5), 3px 12px 22px rgba(0,0,0,0.1);
 }
 div.social-net ul li img.img-circle, div.social-net ul li img.img-rounded {
-
-    width: 65px;
+    width: 50px;
     cursor: pointer;
 }
 
@@ -311,8 +313,11 @@ div.col-lg-8 .img-circle:hover, div.social-net li img:hover{
     -ms-transform: scale(1.05);
     transform: scale(1.05);
 }
-
-
+#wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
 
 body {
     background-color: rgba(126, 126, 135, 0.86);
@@ -333,18 +338,15 @@ body {
     }
 }
 
-#r-text{
-    display: inline-block;
-    --border: dotted;
+#jump-wrapper{
+    position: relative;
 }
 
 .v-jump{
     position: relative;
     display: inline;
     --border: dotted;
-    --padding-bottom: 10px;
-
-
+    padding-bottom: 10px;
 
 }
 .v-jump:hover{
@@ -372,5 +374,8 @@ body {
     width: 100%;
 }
 
+.smth-soon, .text-center, .me-info, .container{
+    --border: dotted;
+}
 
 --костыли для фоток
