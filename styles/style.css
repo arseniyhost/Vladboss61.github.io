@@ -258,6 +258,7 @@ body, html { height: 100%;}
 }
 
 
+
 div.col-lg-8 h1, div.col-lg-8 h2 {
     font-family: 'Playfair Display SC', serif;
     font-weight: 500;
@@ -322,7 +323,6 @@ div.col-lg-8 .img-circle:hover {
     -webkit-transform: scale(1.07);
     -ms-transform: scale(1.07);
     transform: scale(1.07);
-}
 }
 
 #wrapper{
