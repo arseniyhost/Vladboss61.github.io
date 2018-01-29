@@ -21,7 +21,7 @@ $(document).ready(function () {
     });
 
     $('#social-network').click( function () {
-        var html = `<div class="social-net">                   
+        var html = `<br><div class="social-net">                   
                     <ul>
                         <li>
                             <a href="http://t.me/VladikDRow" target="_blank"> 
