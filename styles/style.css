@@ -303,16 +303,28 @@ div.social-net ul li img.img-circle, div.social-net ul li img.img-rounded {
     cursor: pointer;
 }
 
-div.col-lg-8 .img-circle:hover, div.social-net li img:hover{
+div.social-net li img:hover{
     -webkit-transition: all 0.3s ease;;
     -moz-transition: all 0.3s ease;;
     -o-transition: all 0.3s ease;;
     transition: all 0.3s ease;
 
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
+    -webkit-transform: scale(1.12);
+    -ms-transform: scale(1.12);
+    transform: scale(1.12);
 }
+div.col-lg-8 .img-circle:hover {
+    -webkit-transition: all 0.3s ease;;
+    -moz-transition: all 0.3s ease;;
+    -o-transition: all 0.3s ease;;
+    transition: all 0.3s ease;
+
+    -webkit-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    transform: scale(1.07);
+}
+}
+
 #wrapper{
     position: relative;
     width: 100%;
