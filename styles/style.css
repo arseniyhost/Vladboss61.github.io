@@ -397,6 +397,7 @@ body {
 div.smth-soon {
     transition: all 0.5s;
 }
+
 .opclass{
     opacity: 0;
 }
