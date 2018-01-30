@@ -281,17 +281,20 @@ div.col-lg-8 h1{
     cursor: pointer;
 }
 .me-info{
+    --border: dotted;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 .social-net{
     position: absolute;
-    left: 29%;
     --border: dotted;
 }
 .social-net li{
     opacity: 0;
     float: left;
-    margin-left: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
     list-style-type: none;
     --border: #1a1a1a dotted;
 
@@ -352,13 +355,14 @@ body {
 
 #jump-wrapper{
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .v-jump{
     position: relative;
     display: inline;
     --border: dotted;
-    padding-bottom: 10px;
 
 }
 .v-jump:hover{
@@ -390,5 +394,22 @@ body {
     --border: dotted;
 }
 
+div.smth-soon {
+    transition: all 0.5s;
+}
+.opclass{
+    opacity: 0;
+}
+.animate-height-to-block{
+    animation: heightAnimateBlock 1s ease infinite alternate;
+}
+@keyframes heightAnimateBlock {
+    from {
+        height: 0%;
+    }
+    to{
+        height: 100%;
+    }
+}
 
 --костыли для фоток

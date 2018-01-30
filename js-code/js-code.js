@@ -4,7 +4,6 @@ $(document).ready(function () {
     clickedOnMainPhoto();
     MenuSlider();
 
-
     $('[data-toggle="offcanvas"]').click(function () {
         $('#wrapper').toggleClass('toggled');
     });
@@ -21,7 +20,7 @@ $(document).ready(function () {
     });
 
     $('#social-network').click( function () {
-        var html = `<br><div class="social-net">                   
+        var html = `<div class="social-net">                   
                     <ul>
                         <li>
                             <a href="http://t.me/VladikDRow" target="_blank"> 
@@ -87,10 +86,13 @@ $(document).ready(function () {
         var out = null;
         $(document).on('click','.col-lg-8 img.img-circle', function () {
             if(flag){
+                //$('div.col-lg-8 .smth-soon h2').addClass();
                 out = AnimationSmthSoon();
+
                 flag = false;
             }else {
                 StopAnimationSmthSoon(out);
+                 // $('div.col-lg-8 .smth-soon h2').removeClass('opclass');
                 $('div.col-lg-8 .smth-soon').html(' ');
                 flag = true;
             }
@@ -105,18 +107,20 @@ $(document).ready(function () {
         var tick = 0;
         var out = setInterval(function () {
             var soon = $('div.col-lg-8 div.smth-soon');
+            //var obj = document.createElement('<h2>Smth soon.</h2>');
+            //obj.addClass('animate-height-to-block');
             switch (tick){
                 case 0:
                     tick++;
-                    soon.html('<h2>Smth soon.</h2>');
+                    soon.html('<h2 class="animate-height-to-block">Smth soon.</h2>');
                     break;
                 case 1:
                     tick++;
-                    soon.html('<h2>Smth soon..</h2>').fadeIn('slow');
+                    soon.html('<h2 class="animate-height-to-block">Smth soon..</h2>');
                     break;
                 case 2:
                     tick++;
-                    soon.html('<h2>Smth soon...</h2>').fadeIn('slow');
+                    soon.html('<h2 class="animate-height-to-block">Smth soon..</h2> ');
                     break;
                 default:
                     tick = 0;
