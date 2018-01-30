@@ -1,6 +1,7 @@
 $(document).ready(function () {
     var audio = new Audio();
     audio.src = 'audio/Markul_-_Atlantida.mp3';
+    audio.load();
     $(document).on('click','img[property="audio-play"]', function () {
         if(audio.paused) {
             audio.play();
