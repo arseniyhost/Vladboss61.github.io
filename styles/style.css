@@ -402,18 +402,10 @@ div.smth-soon {
     opacity: 0;
 }
 
-.animate-height-to-block{
-    animation: heightAnimateBlock 1s ease infinite alternate;
+/*отступ соц иконок что бы не налазило*/
+.social-net li{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
-@keyframes heightAnimateBlock {
-    from {
-        height: 0px;
-    }
-    to{
-        height: 50px;
-    }
-}
-
-
 
 --костыли для фоток
