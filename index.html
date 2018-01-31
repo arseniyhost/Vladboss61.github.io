@@ -9,12 +9,15 @@
     <title>I love you | Blog</title>
     <link rel="shortcut icon" href="images/titel-icons/icons8-businessman-filled-50.png" type="image/x-icon">
 
+    <link rel="stylesheet" href="styles/flipping_gallery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" href="styles/style.css">
 
 
     <!--<script src="js-code/js-frameworks/jquery-3.1.1.min.js"></script>-->
+    <!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js-code/js-frameworks/jquery.flipping_text.js"></script>
     <script src="js-code/js-code.js"></script>
     <script src="js-code/js-audio.js" ></script>
     <script src="js-code/js-animate.js"></script>
@@ -54,7 +57,9 @@
                     <span id="main-photo">
                         <img src="images/my-photos/trKSQmOQQtE.jpg" class="img-circle" property="audio-play">
                     </span>
-                    <div class="smth-soon">  </div> <!--.smth-soon-->
+                        <div class="smth-soon">
+                            <h2 class="intro">Smth soon.</h2>
+                        </div><!--.smth-soon-->
                 </div>
             </div>
             <br>
@@ -67,5 +72,12 @@
 </div>
 </body>
 <script>
+    $(".intro").flipping_text({
+        tickerTime: 9       ,
+        customRandomChar: false,
+        tickerCount: 12,
+        opacityEffect: true,
+        resetOnChange: false
+    });
 </script>
 </html>
