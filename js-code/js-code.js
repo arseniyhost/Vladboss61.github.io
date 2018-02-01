@@ -21,6 +21,7 @@ $(document).ready(function () {
     });
 
     $('#social-network').click( function () {
+
         var html = `<div class="social-net">                   
                     <ul>
                         <li>
@@ -83,34 +84,35 @@ $(document).ready(function () {
     }
 // ИСПРАВАИТЬ БЛОК РАСШИРЯЕТСЯ НО НЕ ВСЕ ТАК КАК НАДО ПОДУМАТЬ КАК НИТЬ !!
     function clickedOnMainPhoto() {
-        // var flag = true;
-        // var out = null;
-        // $(document).on('click','.col-lg-8 img.img-circle', function () {
-        //     if(flag){
-        //         $('.smth-soon').animate({
-        //             height: '100px'
-        //         },'slow')
-        //
-        //         //$('div.col-lg-8 .smth-soon h2').addClass();
-        //         //out = AnimationSmthSoon();
-        //         var soon = $('div.col-lg-8 div.smth-soon');
-        //         soon.html('<h2 class="intro">Smth soon.</h2>');
-        //         flag = false;
-        //     }else {
-        //         //StopAnimationSmthSoon(out);
-        //          // $('div.col-lg-8 .smth-soon h2').removeClass('opclass');
-        //         $('div.col-lg-8 .smth-soon').html(' ');
-        //         $('.smth-soon').animate({
-        //             height: '0px'
-        //         },'slow')
-        //         flag = true;
-        //     }
-        //
-        //     // $('.smth-soon').slideDown(1000,()=>{
-        //     //     $('.smth-soon').soon.html('<h2>Smth soon.<h2>');
-        //     // });
-        //
-        // });
+        var flag = true;
+        var out = null;
+        $(document).on('click','.col-lg-8 img.img-circle', function () {
+            $('h2.intro').slideToggle(1000);
+            // if(flag){
+            //     $('.smth-soon').animate({
+            //         height: '100px'
+            //     },'slow')
+            //
+            //     //$('div.col-lg-8 .smth-soon h2').addClass();
+            //     //out = AnimationSmthSoon();
+            //     var soon = $('div.col-lg-8 div.smth-soon');
+            //     soon.html('<h2 class="intro">Smth soon.</h2>');
+            //     flag = false;
+            // }else {
+            //     //StopAnimationSmthSoon(out);
+            //      // $('div.col-lg-8 .smth-soon h2').removeClass('opclass');
+            //     $('div.col-lg-8 .smth-soon').html(' ');
+            //     $('.smth-soon').animate({
+            //         height: '0px'
+            //     },'slow')
+            //     flag = true;
+            // }
+
+            // $('.smth-soon').slideDown(1000,()=>{
+            //     $('.smth-soon').soon.html('<h2>Smth soon.<h2>');
+            // });
+
+        });
     }
     //просто обертка с другим именем
     function StopAnimationSmthSoon(out) {

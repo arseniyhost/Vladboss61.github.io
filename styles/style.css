@@ -407,5 +407,8 @@ div.smth-soon {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+h2.intro{
+    display: none;
+}
 
---костыли для фоток
+/*--костыли для фоток*/
